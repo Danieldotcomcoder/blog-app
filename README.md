@@ -24,6 +24,8 @@ $ git clone https://github.com/Danieldotcomcoder/blog-app.git
 - Run `bundle install` or `bundle i` to install the dependencies
 - Run `rails s` to run the code!
 - Run `rubocop` to find and fix linters
+
+
 ## Authors
 
 👤 Daniel Shdeed
