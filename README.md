@@ -19,7 +19,7 @@ To get a local copy up and running follow these simple example steps.
 
 ```
 $ git clone https://github.com/Danieldotcomcoder/blog-app.git
-
+```
 
 - Run `bundle install` or `bundle i` to install the dependencies
 - Run `rails s` to run the code!
