@@ -11,6 +11,19 @@ In this project we will creare a fully functional website that will show the lis
 - Visual Studio Code
 - Rubocop
 
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+- Open terminal
+- Clone this project by the command: 
+
+```
+$ git clone https://github.com/Danieldotcomcoder/blog-app.git
+
+
+- Run `bundle install` or `bundle i` to install the dependencies
+- Run `rails s` to run the code!
+- Run `rubocop` to find and fix linters
 ## Authors
 
 👤 Daniel Shdeed
