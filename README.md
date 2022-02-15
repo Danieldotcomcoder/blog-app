@@ -1,24 +1,36 @@
-# README
+# Blog app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project we will creare a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-Things you may want to cover:
+## Built With
+- Ruby on Rails
 
-* Ruby version
+## Technologies used
+- Github
+- Gitflow
+- Visual Studio Code
+- Rubocop
 
-* System dependencies
+## Authors
 
-* Configuration
+👤 Daniel Shdeed
 
-* Database creation
+- GitHub: [https://github.com/Danieldotcomcoder)]
+- Twitter: [https://twitter.com/DannyDotcoder)]
+- LinkedIn: [https://www.linkedin.com/in/daniel-shdeed-832b03115/]
 
-* Database initialization
+## 🤝 Contributing
 
-* How to run the test suite
+Contributions, issues, and feature requests are welcome!
 
-* Services (job queues, cache servers, search engines, etc.)
+Feel free to check the [issues page](../../issues/).
 
-* Deployment instructions
+## Show your support
 
-* ...
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
