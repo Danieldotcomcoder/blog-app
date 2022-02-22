@@ -20,3 +20,17 @@
   .posts-count {
     margin-left: 5%;
   }
+
+  .post-header {
+    display: flex;
+    flex-direction: row;
+    width: 650px;
+    border: 1px solid black;
+  }
+
+  .commentslikes {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    font-size: 15px;
+  }
