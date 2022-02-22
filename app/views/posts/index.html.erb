@@ -1,1 +1,9 @@
 <h1>show all posts of a user</h1>
+<h2><%= @user.Name%></h2>
+<% @posts.each do |post| %>
+  post: <%= post.Title %>
+<% end %>
+<h2><%= @user.Name%></h2>
+<% @comments.each do |c| %>
+  comment: <%= c.Title %>
+<% end %>

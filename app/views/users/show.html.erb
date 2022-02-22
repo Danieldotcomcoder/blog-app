@@ -1,1 +1,10 @@
 <h1>show user info</h1>
+<h2><%= @user.Name%></h2>
+<h3><%= @user.Bio%></h3>
+
+<% @user.three_recent_posts.each do |post| %>
+  
+      <h2><%= post.Title%></h2>
+      <p><%= post.Text%></p>
+  
+<%end%>
