@@ -23,16 +23,15 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html do
         if new_p.save
-          redirect_to "/users/#{current_user.id}/posts/", notice: 'Success!'
+          redirect_to "/users/#{current_user.id}/posts/", notice: 'post created!'
         else
-          render :new, alert: 'Error occured!'
+          render :new
         end
       end
     end
   end
 
   private
-
 
   def post_params
     params.require(:post).permit(:Title, :Text)
