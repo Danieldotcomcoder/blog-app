@@ -7,7 +7,6 @@ class CommentsController < ApplicationController
     @comment.post_id = params[:post_id]
 
     if @comment.save
-      @comment.update_comments_counter
       redirect_to user_post_path(current_user.id, Post.find(params[:post_id]))
     else
       render :new
