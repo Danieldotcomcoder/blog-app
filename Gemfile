@@ -5,6 +5,8 @@ ruby '3.0.3'
 
 gem 'rspec-rails'
 
+gem 'sass-rails'
+
 gem 'rails-controller-testing'
 
 gem 'ffi'
