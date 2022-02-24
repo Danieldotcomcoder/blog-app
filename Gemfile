@@ -7,6 +7,8 @@ gem 'rspec-rails'
 
 gem 'sass-rails'
 
+gem 'bullet', group: 'development'
+
 gem 'rails-controller-testing'
 
 gem 'ffi'
