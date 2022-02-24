@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
+
+
+  describe ' Post model testing' do
   testuser = User.new(Name: 'User1', Photo:'https://unsplash.com/photos/F_-0BxGuVvo', Bio:'Software developer from lebanon') 
   post = Post.new(user: testuser , Title: 'post title', Text:'This is my post') 
 
@@ -42,12 +45,11 @@ RSpec.describe Post, type: :model do
   c4 =  Comment.create(user: user1, post: post1, Text:'Comment4')
   c5 =  Comment.create(user: user1, post: post1, Text:'Comment5')
   c6 =  Comment.create(user: user1, post: post1, Text:'Comment6')
-  c7 =  Comment.create(user: user1, post: post1, Text:'Comment87)
+  c7 =  Comment.create(user: user1, post: post1, Text:'Comment7')
     expect(post1.recent_comments.length).to eq 5
     expect(post1.recent_comments).to include c7,c6,c5,c4,c3
     expect(post1.comments_counter).to eq 7
   end
   
-  
-
+end
 end
