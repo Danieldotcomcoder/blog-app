@@ -26,6 +26,7 @@ RSpec.describe User, type: :model do
  post3 =  Post.create(user: subject, Title: 'Three', Text: 'third post' )
  post4 =  Post.create(user: subject, Title: 'Four', Text: 'fourth post' )
  post5 =  Post.create(user: subject, Title: 'Five', Text: 'fifth post' )
+  expect(subject.posts_counter).to eq 5
   expect(subject.recent_posts.length).to eq 3 
   expect(subject.recent_posts).to include post5
   expect(subject.recent_posts).to include post4
