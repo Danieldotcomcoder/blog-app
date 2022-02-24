@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Posts', type: :request do
   before :each do
     @user1 = User.create(Name: 'Danny', Photo: 'imgurl', Bio: 'text')
-    @post1 = @user1.posts.create(user: @user1 , Title: 'anything', Text: 'this is my post')
+    @post1 = @user1.posts.create(user: @user1, Title: 'anything', Text: 'this is my post')
   end
 
   describe 'GET /index' do

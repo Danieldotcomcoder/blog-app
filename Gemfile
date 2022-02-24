@@ -5,9 +5,9 @@ ruby '3.0.3'
 
 gem 'rspec-rails'
 
-gem 'sass-rails'
-gem "bullet"
+gem 'bullet'
 gem 'rails-controller-testing'
+gem 'sass-rails'
 
 gem 'ffi'
 
