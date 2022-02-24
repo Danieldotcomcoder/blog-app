@@ -5,7 +5,12 @@ class LikesController < ApplicationController
       user_id: current_user.id,
       post_id: @post.id
     )
-
-    redirect_to "/users/#{@post.user_id}/posts/#{@post.id}", notice: 'Like created' if new_like.save
+    if new_like.save
+      flash[:success] = 'Like saved successfully'
+      redirect_to "/users/#{@post.user_id}/posts/#{@post.id}"
+    else
+      render :new
+      flash.now[:error] = 'Error: Like could not be saved'
+    end
   end
 end
