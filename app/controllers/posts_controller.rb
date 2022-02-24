@@ -23,8 +23,8 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html do
         if new_p.save
-          flash[:success] = 'Post saved successfully'
-          redirect_to "/users/#{current_user.id}/posts/", notice: 'post created!'
+          flash[:success] = 'Post created successfully'
+          redirect_to "/users/#{current_user.id}/posts/"
         else
           render :new
           flash.now[:error] = 'Error: Post could not be saved'
