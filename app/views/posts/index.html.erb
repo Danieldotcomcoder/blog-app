@@ -16,11 +16,13 @@
           <%= link_to "/users/#{@user.id}/posts/#{post.id}", :action => 'go' do %>
             <h3>Post # <%= post.id %></h3>
           <%end%>
-          <p> Text: <%= post.Text %></p>
+          <p> Text1: <%= post.Text %></p>
+         
           <div class='commentslikes'>
             Comments: <%= post.comments_counter %>
             Likes: <%= post.likes_counter %>
           </div>
+           
         </li>
       </ul>
       <ul>

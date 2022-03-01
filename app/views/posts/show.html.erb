@@ -6,7 +6,7 @@
             <h3>Likes: <%= @post.likes_counter %></h3>
              <%= form_with url: "/posts/#{@post.id}/likes", scope: :like do |f| %>
     <%= f.submit 'Like' %>
-    
+      
   <% end %>
 
         </div>
@@ -16,6 +16,8 @@
 <div class="comments">
 <% @post.comments.each do |comment| %>
    <h2><%= comment.user.Name%>: <%= comment.Text%></h2>
+    <%= button_to "Delete Comment", post_comment_path(user_id: @user ,post_id: @post, id: comment) , method: :delete if can? :destroy, comment %>
+    
 <%end%>
 <%= render partial: "createcomment", local: { post: @post } %>
 </div>
@@ -25,5 +27,9 @@
   </div>
 <% end %>
  <% if can? :destroy, @post %>
-      <%= button_to 'Delete', post_path, method: :delete%>
+      <%= button_to 'Delete Post', post_path, method: :delete%>
   <% end %>
+
+
+
+  
