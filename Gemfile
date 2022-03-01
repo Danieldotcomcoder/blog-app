@@ -3,10 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
 
-gem 'rspec-rails'
-gem 'devise'
 gem 'bullet'
+gem 'devise'
 gem 'rails-controller-testing'
+gem 'rspec-rails'
 gem 'sass-rails'
 
 gem 'ffi'
