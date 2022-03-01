@@ -8,6 +8,7 @@ gem 'devise'
 gem 'rails-controller-testing'
 gem 'rspec-rails'
 gem 'sass-rails'
+gem 'cancancan', '~> 1.9'
 
 gem 'ffi'
 
