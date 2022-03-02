@@ -10,6 +10,5 @@ class Ability
       can :manage, Comment, user_id: user.id
       can :read, :all
     end
-  
-    end
+  end
 end

@@ -37,7 +37,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     current_user.decrement!(:posts_counter)
     @post.destroy!
-    flash[:success] = "Post is deleted"
+    flash[:success] = 'Post is deleted'
     redirect_to "/users/#{current_user.id}/posts/"
   end
 
