@@ -1,6 +1,6 @@
 <div>
   <div class='user'>
-    <div><img src = @user.Photo></div>
+    <div><img src =#{@user.Photo}></div>
     <h2>User <%= @user.Name%></h2>
     <p>Number of posts: <%= @user.posts_counter%></p>
   </div>
@@ -28,7 +28,7 @@
       <ul>
         <li>
           <% post.recent_comments.each do |comment| %>
-            <p>Username: <%= comment.Text %></p>
+            <p><%= comment.user.Name %>%: <%= comment.Text %></p>
           <%end%>
         </li>
       </ul>
