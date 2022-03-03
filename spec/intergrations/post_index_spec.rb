@@ -31,7 +31,7 @@ RSpec.describe 'On Post Index Page', type: :feature do
     @sam.comments.create!(Text: 'Great', post: @post1)
     @sam.comments.create!(Text: 'Cool', post: @post1)
 
-    visit user_posts_path(@Danny)
+    visit user_posts_path(@danny)
   end
 
   describe 'post' do
@@ -71,7 +71,7 @@ RSpec.describe 'On Post Index Page', type: :feature do
 
     it 'when i click post it redirects to post page' do
       click_link 'post 1'
-      expect(page).to have_current_path(user_post_path(@Danny, @post1))
+      expect(page).to have_current_path(user_post_path(@danny, @post1))
     end
   end
 end
