@@ -36,7 +36,7 @@ RSpec.describe 'Login Page', type: :system do
         click_button 'Log in'
         expect(page).to have_content('Test')
         image = page.all('img')
-        expect(image.size).to eql 2
+        expect(image.size).to eql 3
 
       end
 

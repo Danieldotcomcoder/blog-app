@@ -67,9 +67,9 @@ RSpec.describe 'Show User page', type: :system do
             images  = find_all("img")
             images[1].click
    
-        expect(page).to have_content('Post # 1')
-        expect(page).to have_content('Post # 2')
-        expect(page).to have_content('Post # 3')
+        expect(page).to have_content('post 1')
+        expect(page).to have_content('post 2')
+        expect(page).to have_content('post 3')
         expect(page).to have_content('See all posts')
       end
   

@@ -73,7 +73,7 @@ RSpec.describe 'On Post Index Page', type: :feature do
     end
 
     it 'when i click post it redirects to post page' do
-      click_link 'Post # 1'
+      click_link 'post 1'
       expect(page).to have_current_path(user_post_path(@Danny, @post1))
     end
   end

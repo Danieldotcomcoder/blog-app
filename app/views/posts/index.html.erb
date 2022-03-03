@@ -14,7 +14,7 @@
       <ul class='posts'>
         <li class='post'>
           <%= link_to "/users/#{@user.id}/posts/#{post.id}", :action => 'go' do %>
-            <h3>Post # <%= post.id %></h3>
+            <h3>Post # <%= post.Title %></h3>
           <%end%>
           <p> Text1: <%= post.Text %></p>
          
