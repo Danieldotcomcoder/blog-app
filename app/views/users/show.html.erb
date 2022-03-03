@@ -1,7 +1,7 @@
 
 <div class='user-info'>
 <div class="user-header">
-<div class='users_img'><img src= @user.Photo></div>
+<div class='users_img'><img src=#{user.Photo}></div>
   <div class="user-info">
     
     <h2>User <%= @user.Name %></h2>
@@ -15,7 +15,7 @@
   <ul class='posts'>
     <% @posts_list.each do |u| %>
     <div class='post'>
-      <h3>Post # <%= u.id %></h3>
+      <h3>Post # <%= u.Title %></h3>
       <p> Text:<%= u.Text %></p>
       <div>
         Comments: <%= u.comments_counter %>

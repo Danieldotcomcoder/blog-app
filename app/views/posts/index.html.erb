@@ -1,6 +1,6 @@
 <div>
   <div class='user'>
-    <div><img src = @user.Photo></div>
+    <div><img src =#{@user.Photo}></div>
     <h2>User <%= @user.Name%></h2>
     <p>Number of posts: <%= @user.posts_counter%></p>
   </div>
@@ -14,7 +14,7 @@
       <ul class='posts'>
         <li class='post'>
           <%= link_to "/users/#{@user.id}/posts/#{post.id}", :action => 'go' do %>
-            <h3>Post # <%= post.id %></h3>
+            <h3>Post # <%= post.Title %></h3>
           <%end%>
           <p> Text1: <%= post.Text %></p>
          
@@ -28,7 +28,7 @@
       <ul>
         <li>
           <% post.recent_comments.each do |comment| %>
-            <p>Username: <%= comment.Text %></p>
+            <p><%= comment.user.Name %>%: <%= comment.Text %></p>
           <%end%>
         </li>
       </ul>
